@@ -1,0 +1,59 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #000;
+}
+
+.user-card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  border: 2px solid red;
+  background-color: #fff;
+}
+
+.user-card {
+  display: flex;
+  flex-direction: row;
+  column-gap: 40px;
+  padding: 30px;
+  border: 3px solid #000;
+}
+
+.user-card img {
+  width: 100%;
+  border: 3px solid #000;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 15px;
+}
+
+.name-container {
+  display: flex;
+  column-gap: 20px;
+}
+
+p {
+  color: rgb(82, 82, 82);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 600px) {
+  .user-card {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}
